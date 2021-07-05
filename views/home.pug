@@ -1,0 +1,39 @@
+extends base.pug
+
+block scripts 
+    script(src="/public/index.js") 
+
+block style 
+    style 
+        include ../public/style.css
+
+block content
+        //- nav.nav
+        //-     ul 
+        //-     li 
+        //-         a Home 
+        //-     li 
+        //-         a About 
+        //-     li 
+        //-         a Services 
+        //-     li 
+        //-         select(name="city", id="cities")
+        //-             option(value="sitapur" )  sitapur 
+        //-             option(value="lucknow" selected)  lucknow
+        //-             option(value="lakhinpur")  Lakhinpur
+        section#Advertisementsection
+            p.heading Welcome to Sam Toures
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione!
+              a(href="http://google.com", class="search", onclick="gSearch(this)", title="Search W3Schools") |🔎|
+        section#Detailssection
+            .heading  Our services are all around
+            div.details
+                div.box Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus eos magnam, alias quia voluptatibus perspiciatis itaque, ut obcaecati ratione molestias facilis. Quis enim nam numquam sunt cumque accusamus unde excepturi praesentium porro ad.
+                div.box Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus eos magnam, alias quia voluptatibus perspiciatis itaque, ut obcaecati ratione molestias facilis. Quis enim nam numquam sunt cumque accusamus unde excepturi praesentium porro ad.
+                div.box Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus eos magnam, alias quia voluptatibus perspiciatis itaque, ut obcaecati ratione molestias facilis. Quis enim nam numquam sunt cumque accusamus unde excepturi praesentium porro ad.
+        section#Contactsection 
+            .heading  Sponsor 
+            div.Gridcontainer
+                div.Griditems Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus eos magnam, alias quia voluptatibus perspiciatis itaque, ut obcaecati ratione molestias facilis. Quis enim nam numquam sunt cumque accusamus unde excepturi praesentium porro ad.
+                div.Griditems Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus eos magnam, alias quia voluptatibus perspiciatis itaque, ut obcaecati ratione molestias facilis. Quis enim nam numquam sunt cumque accusamus unde excepturi praesentium porro ad.
+                div.Griditems Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus eos magnam, alias quia voluptatibus perspiciatis itaque, ut obcaecati ratione molestias facilis. Quis enim nam numquam sunt cumque accusamus unde excepturi praesentium porro ad.

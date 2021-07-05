@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title - #{title}
+        block scripts
+        block style 
+            style 
+                include ../public/style.css
+    body
+        nav.nav
+            ul 
+            li 
+                a(href='/') Home 
+            li 
+                a(href='/') About 
+            li 
+                a(href='/contact') contact us 
+            li 
+                select(name="city", id="cities")
+                    option(value="sitapur" )  sitapur 
+                    option(value="lucknow" selected)  lucknow
+                    option(value="lakhinpur")  Lakhinpur  
+        block content
+        block foot
+            .footer It i my footer &copy;

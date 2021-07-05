@@ -1,0 +1,23 @@
+extends base.pug
+
+block style 
+    style 
+        include ../public/style.css
+        include ../public/contactstyle.css
+
+
+block content 
+    div.container
+        h1  
+            | Contact us
+        .form-action 
+            form(action="/contact", method="POST",class="myform")
+                input(type="text", name="name",class="myinput", placeholder="Enter your name")
+                input(type="phone", name="phone",class="myinput", placeholder="Enter your phone number")
+                input(type="email", name="email",class="myinput", placeholder="Enter your email id")
+                input(type="address", name="address",class="myinput", placeholder="Enter your address")
+                input(type="desc", name="desc",class="myinput", placeholder="Enter your views")
+                button(type="submit", name="submit") Submit
+
+
+
